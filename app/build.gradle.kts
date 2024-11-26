@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.edufun"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.edufun"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -50,6 +50,10 @@ android {
 }
 
 dependencies {
+
+//    For navigation
+    val nav_version = "2.8.4"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
